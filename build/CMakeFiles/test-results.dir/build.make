@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -39,8 +39,11 @@ CMAKE_BINARY_DIR = /home/petin/ros_pkgs/vp_x10_voice/build
 
 # Utility rule file for test-results.
 
+# Include the progress variables for this target.
+include CMakeFiles/test-results.dir/progress.make
+
 CMakeFiles/test-results:
-	/opt/ros/electric/ros/tools/rosunit/scripts/summarize_results.py --nodeps vp_x10_voice
+	/opt/ros/fuerte/share/rosunit/bin/summarize_results.py --nodeps vp_x10_voice
 
 test-results: CMakeFiles/test-results
 test-results: CMakeFiles/test-results.dir/build.make

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -39,26 +39,23 @@ CMAKE_BINARY_DIR = /home/petin/ros_pkgs/vp_x10_voice/build
 
 # Utility rule file for ROSBUILD_genmsg_lisp.
 
+# Include the progress variables for this target.
+include CMakeFiles/ROSBUILD_genmsg_lisp.dir/progress.make
+
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/X10.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_X10.lisp
 
 ../msg_gen/lisp/X10.lisp: ../msg/X10.msg
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/stacks/ros_comm/clients/roslisp/scripts/genmsg_lisp.py
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../msg_gen/lisp/X10.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/X10.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
 ../msg_gen/lisp/X10.lisp: ../manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/ros/core/roslib/manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/ros/core/roslang/manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../msg_gen/lisp/X10.lisp: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../msg_gen/lisp/X10.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/X10.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/X10.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/X10.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_X10.lisp"
-	/opt/ros/electric/stacks/ros_comm/clients/roslisp/scripts/genmsg_lisp.py /home/petin/ros_pkgs/vp_x10_voice/msg/X10.msg
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/petin/ros_pkgs/vp_x10_voice/msg/X10.msg
 
 ../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/X10.lisp
 

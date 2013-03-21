@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -39,24 +39,21 @@ CMAKE_BINARY_DIR = /home/petin/ros_pkgs/vp_x10_voice/build
 
 # Utility rule file for ROSBUILD_genmsg_cpp.
 
+# Include the progress variables for this target.
+include CMakeFiles/ROSBUILD_genmsg_cpp.dir/progress.make
+
 CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/vp_x10_voice/X10.h
 
 ../msg_gen/cpp/include/vp_x10_voice/X10.h: ../msg/X10.msg
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/fuerte/share/roslib/bin/gendeps
 ../msg_gen/cpp/include/vp_x10_voice/X10.h: ../manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/vp_x10_voice/X10.h: /opt/ros/fuerte/share/rospy/manifest.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/vp_x10_voice/X10.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py /home/petin/ros_pkgs/vp_x10_voice/msg/X10.msg
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/petin/ros_pkgs/vp_x10_voice/msg/X10.msg
 
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp
 ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/vp_x10_voice/X10.h

@@ -10,7 +10,6 @@
 /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles/rospack_genmsg_all.dir
 /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles/rospack_genmsg_libexe.dir
 /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles/rospack_gensrv.dir
-/home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles/rospack_gensrv_all.dir
 /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles/test.dir
 /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles/test-future.dir
 /home/petin/ros_pkgs/vp_x10_voice/build/CMakeFiles/test-results.dir

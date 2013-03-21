@@ -70,7 +70,8 @@ def controller(data):
 
     index = data.data
     data1=X10()
-    for ind,elements in enumerate(arr_commands[index-1]):
+    if(index<16):
+      for ind,elements in enumerate(arr_commands[index-1]):
           data1.command1=elements[0]
           data1.command2=elements[1]
           data1.repeatTime=elements[2]

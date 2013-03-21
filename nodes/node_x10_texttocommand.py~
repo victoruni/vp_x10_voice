@@ -58,9 +58,9 @@ arr_commands=[[[HOUSE_A,UNIT_5,1],[HOUSE_A,OFF,1]],        #люстра вык�
               [[HOUSE_A,UNIT_4,1],[HOUSE_A,ON,1]],        #лампа включить
               [[HOUSE_A,UNIT_2,1],[HOUSE_A,ON,1]],        #ночник включить
               [[HOUSE_A,UNIT_6,1],[HOUSE_A,ON,1]],        #гирлянда включить
-              [[HOUSE_A,ALL_LIGHTS_OFF,1]],        #отбой
-              [[HOUSE_A,ALL_LIGHTS_OFF,1]],        #программа 1
-              [[HOUSE_A,ALL_LIGHTS_OFF,1]],        #программа 2
+              [[HOUSE_A,UNIT_5,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_6,1],[HOUSE_A,ON,1],[HOUSE_A,UNIT_4,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_2,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_6,1],[HOUSE_A,OFF,1]],        #отбой
+              [[HOUSE_A,UNIT_5,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_6,1],[HOUSE_A,ON,1],[HOUSE_A,UNIT_4,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_2,1],[HOUSE_A,ON,1],[HOUSE_A,UNIT_6,1],[HOUSE_A,OFF,1]],        #программа 1
+              [[HOUSE_A,UNIT_5,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_6,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_4,1],[HOUSE_A,ON,1],[HOUSE_A,UNIT_2,1],[HOUSE_A,OFF,1],[HOUSE_A,UNIT_6,1],[HOUSE_A,OFF,1]],        #программа 2
               [[HOUSE_A,ALL_LIGHTS_OFF,1]],        #программа 3
               [[HOUSE_A,ALL_LIGHTS_OFF,1]],        #программа 4
               [[HOUSE_A,ALL_LIGHTS_OFF,1]]         #программа 5
